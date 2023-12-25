@@ -1,0 +1,175 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'],
+input[type='text'],
+textarea {
+    -moz-appearance: textfield;
+    background-color: #f6f7f8;
+}
+
+.selectFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 48px;
+
+    .bigInputAndSelect {
+        position: relative;
+        display: flex;
+        width: 100%;
+
+        input {
+            width: 100%;
+
+            position: relative;
+            border-right: none;
+            padding: none;
+            border: 1px solid #e3ebef;
+            border-radius: 5px 0 0 5px;
+            max-width: 290px;
+            height: 20px;
+            padding: 15px;
+        }
+
+        .select {
+            width: 170px;
+            // height: 51.6px;
+            border: 1px solid #e3ebef;
+            border-radius: 0 5px 5px 0;
+            background-color: #f6f7f8;
+            // padding: 0 0 0 50px;
+            text-transform: uppercase;
+        }
+
+        p {
+            position: absolute;
+            left: 1px;
+            top: 50px;
+            font-weight: 400;
+            font-size: 12px;
+            color: #e03f3f;
+        }
+    }
+
+    .swapImg {
+        width: 24px;
+        height: 24px;
+    }
+    .swapButton {
+        border: none;
+        background: none;
+        border-radius: 5px;
+
+        transition: 0.2s;
+        &:hover {
+            background: #e3ebef;
+        }
+    }
+}
+
+.cryptoAddressFlex {
+    label {
+        margin-bottom: 12px;
+        display: block;
+    }
+    input {
+        width: 100%;
+        display: block;
+        position: relative;
+        border-right: none;
+        padding: none;
+        border: 1px solid #e3ebef;
+        border-radius: 5px 0 0 5px;
+        max-width: 723px;
+        height: 20px;
+        padding: 15px;
+    }
+
+    .flexInputButton {
+        display: flex;
+        gap: 32px;
+
+        .buttonFlex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: #e03f3f;
+            }
+
+            button {
+                width: 205px;
+                height: 50px;
+                background-color: #11b3fe;
+                border: 0;
+                border-radius: 5px;
+                color: white;
+                font-weight: 700;
+                font-size: 16px;
+                text-transform: uppercase;
+
+                transition: 0.1s;
+
+                &:hover {
+                    background: #0095e0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .selectFlex {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+
+        .bigInputAndSelect {
+            input {
+                max-width: none;
+            }
+        }
+    }
+
+    .cryptoAddressFlex {
+        input {
+            max-width: none;
+            width: auto;
+        }
+        .flexInputButton {
+            flex-direction: column;
+            gap: 16px;
+            .buttonFlex {
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .cryptoAddressFlex {
+        input {
+            width: auto;
+        }
+
+        .flexInputButton {
+            flex-direction: column;
+            .buttonFlex {
+                button {
+                    max-width: 328px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto';
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.container {
+    margin: 220px 50px 0 220px;
+    max-width: 890px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 50px 50px 0 50px;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        margin: 64px 10px 0 10px;
+    }
+}

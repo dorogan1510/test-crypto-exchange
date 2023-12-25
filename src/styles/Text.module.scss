@@ -1,0 +1,21 @@
+.text {
+    margin-bottom: 60px;
+    h1 {
+        font-weight: 300;
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .text {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
